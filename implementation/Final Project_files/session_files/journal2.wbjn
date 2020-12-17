@@ -1,0 +1,16 @@
+﻿# encoding: utf-8
+# Release 18.2
+SetScriptVersion(Version="18.2.109")
+system1 = GetSystem(Name="SYS")
+system1.Delete()
+template1 = GetTemplate(
+    TemplateName="Magnetostatic",
+    Solver="ANSYS")
+system2 = template1.CreateSystem()
+geometry1 = system2.GetContainer(ComponentName="Geometry")
+geometry1.Edit()
+geometry1.Exit()
+geometry1.Edit()
+geometry1.Exit()
+geometry1.Edit()
+Save(Overwrite=True)

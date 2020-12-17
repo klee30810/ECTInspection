@@ -1,0 +1,128 @@
+﻿# encoding: utf-8
+# Release 18.2
+SetScriptVersion(Version="18.2.109")
+system1 = GetSystem(Name="SYS")
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+engineeringData1 = system1.GetContainer(ComponentName="Engineering Data")
+material1 = engineeringData1.GetMaterial(Name="Magnesium Alloy 2")
+material1.Delete()
+material2 = engineeringData1.GetMaterial(Name="Structural Steel 2")
+material2.Delete()
+material3 = engineeringData1.GetMaterial(Name="Titanium Alloy 2")
+material3.Delete()
+material4 = engineeringData1.GetMaterial(Name="Aluminum Alloy 2")
+material4.Delete()
+material5 = engineeringData1.GetMaterial(Name="Aluminum Alloy")
+matl1 = material5.Duplicate(TargetContainer=engineeringData1)
+material6 = engineeringData1.GetMaterial(Name="Magnesium Alloy")
+matl2 = material6.Duplicate(TargetContainer=engineeringData1)
+material7 = engineeringData1.GetMaterial(Name="Structural Steel")
+matl3 = material7.Duplicate(TargetContainer=engineeringData1)
+material8 = engineeringData1.GetMaterial(Name="Titanium Alloy")
+matl4 = material8.Duplicate(TargetContainer=engineeringData1)
+matlProp1 = matl1.GetProperty(Name="Relative Permeability")
+matlProp1.SetData(
+    Variables=["Relative Permeability"],
+    Values=[["1.00002"]])
+matlProp2 = matl2.GetProperty(Name="Relative Permeability")
+matlProp2.SetData(
+    Variables=["Relative Permeability"],
+    Values=[["1.000012"]])
+matlProp3 = material7.GetProperty(Name="Relative Permeability")
+matlProp3.SetData(
+    Variables=["Relative Permeability"],
+    Values=[["2000"]])
+matlProp4 = matl1.GetProperty(Name="Resistivity")
+matlProp4.Delete(Behavior="Isotropic")
+matlProp5 = matl1.CreateProperty(
+    Name="Resistivity",
+    Behavior="Isotropic",
+    Qualifiers={"Definition": "", "Behavior": "Isotropic"})
+matlProp5.SetData(
+    Index=-1,
+    Variables=["Resistivity"],
+    Values=[["12 [ohm mm]"]])
+matlProp5.SetVariableProperty(
+    VariableName="Resistivity",
+    Property="Unit",
+    Value="ohm m")
+matlProp5.SetData(
+    Variables=["Resistivity"],
+    Values=[["0.012 [ohm m]"]])
+matlProp5.SetData(
+    Variables=["Resistivity"],
+    Values=[["2.65E-08 [ohm m]"]])
+matlProp6 = matl2.GetProperty(Name="Resistivity")
+matlProp6.SetData(
+    Variables=["Resistivity"],
+    Values=[["1.181E-07 [ohm m]"]])
+matlProp6.SetData(
+    Variables=["Resistivity"],
+    Values=[["9.2E-08 [ohm m]"]])
+matlProp7 = matl4.GetProperty(Name="Resistivity")
+matlProp7.SetData(
+    Variables=["Resistivity"],
+    Values=[["5.2E-05 [ohm m]"]])
+matlProp7.SetVariableProperty(
+    VariableName="Resistivity",
+    Property="Unit",
+    Value="ohm cm")
+matlProp7.SetData(
+    Variables=["Resistivity"],
+    Values=[["0.0052 [ohm cm]"]])
+matlProp7.SetVariableProperty(
+    VariableName="Resistivity",
+    Property="Unit",
+    Value="ohm m")
+matlProp7.SetData(
+    Variables=["Resistivity"],
+    Values=[["5.2E-05 [ohm m]"]])
+matlProp7.SetVariableProperty(
+    VariableName="Resistivity",
+    Property="Unit",
+    Value="ohm cm")
+matlProp7.SetData(
+    Variables=["Resistivity"],
+    Values=[["0.0052 [ohm cm]"]])
+matlProp7.SetData(
+    Variables=["Resistivity"],
+    Values=[["5.2E-05 [ohm cm]"]])
+matlProp7.SetVariableProperty(
+    VariableName="Resistivity",
+    Property="Unit",
+    Value="ohm m")
+matlProp7.SetData(
+    Variables=["Resistivity"],
+    Values=[["5.2E-07 [ohm m]"]])
+matlProp8 = matl3.GetProperty(Name="Relative Permeability")
+matlProp8.SetData(
+    Variables=["Relative Permeability"],
+    Values=[["2000"]])
+matlProp9 = matl3.GetProperty(Name="Resistivity")
+matlProp9.SetData(
+    Variables=["Resistivity"],
+    Values=[["1.6E-07 [ohm m]"]])
+modelComponent1 = system1.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model1.Edit()
+matl3.DisplayName = "Iso"
+matl3.Delete()
+matl5 = material7.Duplicate(TargetContainer=engineeringData1)
+matlProp3.SetData(
+    Variables=["Relative Permeability"],
+    Values=[["10000"]])
+matlProp10 = matl5.GetProperty(Name="Resistivity")
+matlProp10.SetData(
+    Variables=["Resistivity"],
+    Values=[["1.6E-07 [ohm m]"]])
+matlProp11 = matl4.GetProperty(Name="Relative Permeability")
+matlProp11.SetData(
+    Variables=["Relative Permeability"],
+    Values=[["1.00018"]])
+Save(Overwrite=True)
+model1.Exit()
+modelComponent1.Refresh()
+model1.Edit()
+model1.Exit()
+Save(Overwrite=True)

@@ -1,0 +1,9 @@
+/COM,ANSYS RELEASE Release 18.2      BUILD 18.2      UP20170726       16:27:55
+
+ *** WARNING ***                         CP =       0.469   TIME= 16:27:56
+ The Distributed ANSYS solution does not support SOLID117 elements.      
+ Distributed parallel processing will be deactivated for this solution.  
+
+ *** WARNING ***                         CP =       0.500   TIME= 16:27:56
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    

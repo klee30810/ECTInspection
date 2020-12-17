@@ -1,0 +1,250 @@
+﻿# encoding: utf-8
+# Release 18.2
+SetScriptVersion(Version="18.2.109")
+system1 = GetSystem(Name="SYS")
+results1 = system1.GetContainer(ComponentName="Results")
+results1.Edit()
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Exit()
+model1.Edit()
+engineeringData1 = system1.GetContainer(ComponentName="Engineering Data")
+material1 = engineeringData1.GetMaterial(Name="Structural Steel")
+matlProp1 = material1.CreateProperty(
+    Name="B-H Curve",
+    Qualifiers={"Definition": "", "Behavior": ""})
+matlProp2 = material1.CreateProperty(
+    Name="Relative Permeability",
+    Behavior="Orthotropic",
+    Qualifiers={"Definition": "", "Behavior": "Orthotropic"})
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=-1,
+    Variables=["Magnetic Field Intensity"],
+    Values=[["1000 [A m^-1]"]])
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=1,
+    Variables=["Magnetic Flux Density"],
+    Values=[["1 [T]"]])
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=-1,
+    Variables=["Magnetic Field Intensity"],
+    Values=[["1500 [A m^-1]"]])
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=2,
+    Variables=["Magnetic Flux Density"],
+    Values=[["1.4 [T]"]])
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=-1,
+    Variables=["Magnetic Field Intensity"],
+    Values=[["2000 [A m^-1]"]])
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=3,
+    Variables=["Magnetic Flux Density"],
+    Values=[["1.45 [T]"]])
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=-1,
+    Variables=["Magnetic Field Intensity"],
+    Values=[["2000 [A m^-1]"]])
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=4,
+    Variables=["Magnetic Flux Density"],
+    Values=[["1.45 [T]"]])
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=3,
+    Variables=["Magnetic Flux Density"],
+    Values=[["1.4 [T]"]])
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=3,
+    Variables=["Magnetic Field Intensity"],
+    Values=[["1500 [A m^-1]"]])
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=2,
+    Variables=["Magnetic Field Intensity"],
+    Values=[["1000 [A m^-1]"]])
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=2,
+    Variables=["Magnetic Flux Density"],
+    Values=[["1 [T]"]])
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=1,
+    Variables=["Magnetic Field Intensity"],
+    Values=[["200 [A m^-1]"]])
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=1,
+    Variables=["Magnetic Flux Density"],
+    Values=[["0.2 [T]"]])
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=2,
+    Variables=["Magnetic Flux Density"],
+    Values=[["0.5 [T]"]])
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=2,
+    Variables=["Magnetic Field Intensity"],
+    Values=[["500 [A m^-1]"]])
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=3,
+    Variables=["Magnetic Field Intensity"],
+    Values=[["1000 [A m^-1]"]])
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=3,
+    Variables=["Magnetic Flux Density"],
+    Values=[["1 [T]"]])
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=4,
+    Variables=["Magnetic Field Intensity"],
+    Values=[["1500 [A m^-1]"]])
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=4,
+    Variables=["Magnetic Flux Density"],
+    Values=[["1.4 [T]"]])
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=-1,
+    Variables=["Magnetic Field Intensity"],
+    Values=[["2000 [A m^-1]"]])
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=5,
+    Variables=["Magnetic Flux Density"],
+    Values=[["1.45 [T]"]])
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=-1,
+    Variables=["Magnetic Field Intensity"],
+    Values=[["2500 [A m^-1]"]])
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=6,
+    Variables=["Magnetic Flux Density"],
+    Values=[["1.475 [T]"]])
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=-1,
+    Variables=["Magnetic Flux Density"],
+    Values=[["1.5 [T]"]])
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=-1,
+    Variables=["Magnetic Field Intensity"],
+    Values=[["3000 [A m^-1]"]])
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=8,
+    Variables=["Magnetic Flux Density"],
+    Values=[["1.5 [T]"]])
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=7,
+    Variables=["Magnetic Flux Density"],
+    Values=[["0 [T]"]])
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=7,
+    Variables=["Magnetic Flux Density"],
+    Values=[["7.8886090522101181E-31 [T]"]])
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=-1,
+    Variables=["Magnetic Field Intensity"],
+    Values=[["4000 [A m^-1]"]])
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=9,
+    Variables=["Magnetic Flux Density"],
+    Values=[["1.5 [T]"]])
+matlProp1.DeleteData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=7)
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=-1,
+    Variables=["Magnetic Field Intensity"],
+    Values=[["8000 [A m^-1]"]])
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=9,
+    Variables=["Magnetic Flux Density"],
+    Values=[["1.52 [T]"]])
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=-1,
+    Variables=["Magnetic Field Intensity"],
+    Values=[["1000 [A m^-1]"]])
+matlProp1.DeleteData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=10)
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=-1,
+    Variables=["Magnetic Field Intensity"],
+    Values=[["10000 [A m^-1]"]])
+matlProp1.SetData(
+    SheetName="B-H Curve",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=10,
+    Variables=["Magnetic Flux Density"],
+    Values=[["1.52 [T]"]])
+favorites1 = EngData.LoadFavoriteItems()
+model1.Exit()
+modelComponent1 = system1.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model1.Edit()
+matlProp1.Delete()
+matlProp2.Delete(Behavior="Isotropic")
+Save(Overwrite=True)

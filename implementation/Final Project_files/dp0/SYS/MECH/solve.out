@@ -1,0 +1,547 @@
+
+ ANSYS Academic Teaching Introductory              
+
+
+ *------------------------------------------------------------------*
+ |                                                                  |
+ |   W E L C O M E   T O   T H E   A N S Y S (R)  P R O G R A M     |
+ |                                                                  |
+ *------------------------------------------------------------------*
+
+
+
+
+ ***************************************************************
+ *            ANSYS Release 18.2     LEGAL NOTICES             *
+ ***************************************************************
+ *                                                             *
+ * Copyright 2017 SAS IP, Inc.  All rights reserved.           *
+ * Unauthorized use, distribution or duplication is            *
+ * prohibited.                                                 *
+ *                                                             *
+ * Ansys is a registered trademark of ANSYS, Inc. or its       *
+ * subsidiaries in the United States or other countries.       *
+ * See the ANSYS, Inc. online documentation or the ANSYS, Inc. *
+ * documentation CD or online help for the complete Legal      *
+ * Notice.                                                     *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * THIS ANSYS SOFTWARE PRODUCT AND PROGRAM DOCUMENTATION       *
+ * INCLUDE TRADE SECRETS AND CONFIDENTIAL AND PROPRIETARY      *
+ * PRODUCTS OF ANSYS, INC., ITS SUBSIDIARIES, OR LICENSORS.    *
+ * The software products and documentation are furnished by    *
+ * ANSYS, Inc. or its subsidiaries under a software license    *
+ * agreement that contains provisions concerning               *
+ * non-disclosure, copying, length and nature of use,          *
+ * compliance with exporting laws, warranties, disclaimers,    *
+ * limitations of liability, and remedies, and other           *
+ * provisions.  The software products and documentation may be *
+ * used, disclosed, transferred, or copied only in accordance  *
+ * with the terms and conditions of that software license      *
+ * agreement.                                                  *
+ *                                                             *
+ * ANSYS, Inc. is a UL registered                              *
+ * ISO 9001:2008 company.                                      *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * This product is subject to U.S. laws governing export and   *
+ * re-export.                                                  *
+ *                                                             *
+ * For U.S. Government users, except as specifically granted   *
+ * by the ANSYS, Inc. software license agreement, the use,     *
+ * duplication, or disclosure by the United States Government  *
+ * is subject to restrictions stated in the ANSYS, Inc.        *
+ * software license agreement and FAR 12.212 (for non-DOD      *
+ * licenses).                                                  *
+ *                                                             *
+ ***************************************************************
+
+ Release 18.2
+     
+ Point Releases and Patches installed:   
+     
+ ANSYS Academic Student Release 18.2 
+
+
+          *****  ANSYS COMMAND LINE ARGUMENTS  *****
+  BATCH MODE REQUESTED (-b)    = NOLIST
+  INPUT FILE COPY MODE (-c)    = COPY
+  DISTRIBUTED MEMORY PARALLEL REQUESTED
+       2 PARALLEL PROCESSES REQUESTED WITH SINGLE THREAD PER PROCESS
+    TOTAL OF     2 CORES REQUESTED
+  DESIGNXPLORER REQUESTED
+  MPI OPTION                   = INTELMPI
+  INPUT FILE NAME              = C:\Users\kmlee\Desktop\cae project\_ProjectScratch\Scr6F5D\dummy.dat
+  OUTPUT FILE NAME             = C:\Users\kmlee\Desktop\cae project\_ProjectScratch\Scr6F5D\solve.out
+  START-UP FILE MODE           = NOREAD
+  STOP FILE MODE               = NOREAD
+
+ RELEASE= Release 18.2         BUILD= 18.2      UP20170726   VERSION=WINDOWS x64 
+ CURRENT JOBNAME=file0  16:27:56  JUN 08, 2019 CP=      0.219
+
+
+ PARAMETER _DS_PROGRESS =     999.0000000    
+
+ /INPUT FILE= ds.dat  LINE=       0
+
+
+
+ *** NOTE ***                            CP =       0.344   TIME= 16:27:56
+ The /CONFIG,NOELDB command is not valid in a Distributed ANSYS          
+ solution.  Command is ignored.                                          
+
+ *GET  _WALLSTRT  FROM  ACTI  ITEM=TIME WALL  VALUE=  16.4655556    
+
+ TITLE= 
+ Final Project--Magnetostatic (A5)                                             
+
+
+ SET PARAMETER DIMENSIONS ON  _WB_PROJECTSCRATCH_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_PROJECTSCRATCH_DIR(1) = C:\Users\kmlee\Desktop\cae project\_ProjectScratch\Scr6F5D\
+
+ SET PARAMETER DIMENSIONS ON  _WB_SOLVERFILES_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_SOLVERFILES_DIR(1) = C:\Users\kmlee\Desktop\cae project\Final Project_files\dp0\SYS\MECH\
+
+ SET PARAMETER DIMENSIONS ON  _WB_USERFILES_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_USERFILES_DIR(1) = C:\Users\kmlee\Desktop\cae project\Final Project_files\user_files\
+ --- Data in consistent MKS units. See Solving Units in the help system for more
+
+ MKS UNITS SPECIFIED FOR INTERNAL    
+  LENGTH        (l)  = METER (M)
+  MASS          (M)  = KILOGRAM (KG)
+  TIME          (t)  = SECOND (SEC)
+  TEMPERATURE   (T)  = CELSIUS (C)
+  TOFFSET            = 273.0
+  CHARGE        (Q)  = COULOMB
+  FORCE         (f)  = NEWTON (N) (KG-M/SEC2)
+  HEAT               = JOULE (N-M)
+
+  PRESSURE           = PASCAL (NEWTON/M**2)
+  ENERGY        (W)  = JOULE (N-M)
+  POWER         (P)  = WATT (N-M/SEC)
+  CURRENT       (i)  = AMPERE (COULOMBS/SEC)
+  CAPACITANCE   (C)  = FARAD
+  INDUCTANCE    (L)  = HENRY
+  MAGNETIC FLUX      = WEBER
+  RESISTANCE    (R)  = OHM
+  ELECTRIC POTENTIAL = VOLT
+
+ INPUT  UNITS ARE ALSO SET TO MKS 
+
+ *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE Release 18.2     18.2     ***
+ DISTRIBUTED ANSYS Academic Teaching Introductory              
+
+ 01055371  VERSION=WINDOWS x64   16:27:56  JUN 08, 2019 CP=      0.344
+
+ Final Project--Magnetostatic (A5)                                             
+
+
+
+          ***** ANSYS ANALYSIS DEFINITION (PREP7) *****
+ *********** Nodes for the whole assembly ***********
+ *********** Elements for Body 1 "Pole1" ***********
+ *********** Elements for Body 2 "Pole2" ***********
+ *********** Elements for Body 3 "BackBar" ***********
+ *********** Elements for Body 4 "Specimen" ***********
+ *********** Elements for Body 5 "coil_A1" ***********
+ *********** Elements for Body 6 "coil_A3" ***********
+ *********** Elements for Body 7 "coil_A2" ***********
+ *********** Elements for Body 8 "coil_A4" ***********
+ *********** Elements for Body 9 "air" ***********
+ *********** Send User Defined Coordinate System(s) ***********
+ *********** Set Reference Temperature ***********
+ *********** Send Materials ***********
+ *********** Send Named Selection as Node Component ***********
+ *********** Set KEYOP for Solid Conductors ***********
+ *********** Create FluxPar ***********
+ *********** Create Coil Current ***********
+
+
+ ***** ROUTINE COMPLETED *****  CP =         0.438
+
+
+ --- Number of total nodes = 7344
+ --- Number of contact elements = 0
+ --- Number of spring elements = 0
+ --- Number of bearing elements = 0
+ --- Number of solid elements = 4159
+ --- Number of condensed parts = 0
+ --- Number of total elements = 4159
+
+ *GET  _WALLBSOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  16.4655556    
+ ****************************************************************************
+ *************************    SOLUTION       ********************************
+ ****************************************************************************
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+ WRITE ALL  ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+ ****************************************************
+ ******************* SOLVE FOR LS 1 ****************
+
+ SPECIFIED BODY FORCE JS   FOR ALL PICKED ELEMENTS AT STARTING LOCATION      2
+ IS SET ACCORDING TO TABLE PARAMETER = _LOADVARI87                     
+
+ USE AUTOMATIC TIME STEPPING THIS LOAD STEP
+
+ USE       1 SUBSTEPS INITIALLY THIS LOAD STEP FOR ALL  DEGREES OF FREEDOM
+ FOR AUTOMATIC TIME STEPPING:
+   USE     10 SUBSTEPS AS A MAXIMUM
+   USE      1 SUBSTEPS AS A MINIMUM
+
+ TIME=  1.0000    
+
+ ERASE THE CURRENT DATABASE OUTPUT CONTROL TABLE.
+
+
+ WRITE ALL  ITEMS TO THE DATABASE WITH A FREQUENCY OF NONE
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE ALL  ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ CONVERGENCE ON CSG  BASED ON THE NORM OF THE N-R LOAD
+   WITH A TOLERANCE OF 0.5000E-02 AND A MINIMUM REFERENCE VALUE OF 0.1000E-05
+   USING THE L2 NORM (CHECK THE SRSS VALUE)
+
+ *GET  ANSINTER_  FROM  ACTI  ITEM=INT        VALUE=  0.00000000    
+
+ *IF  ANSINTER_                         ( =   0.00000     )  NE  
+      0                                 ( =   0.00000     )  THEN    
+
+ *ENDIF
+
+ *** WARNING ***                         CP =       0.469   TIME= 16:27:56
+ The Distributed ANSYS solution does not support SOLID117 elements.      
+ Distributed parallel processing will be deactivated for this solution.  
+
+ *** NOTE ***                            CP =       0.500   TIME= 16:27:56
+ Distributed parallel processing has been temporarily disabled.          
+
+ *****  ANSYS SOLVE    COMMAND  *****
+
+ *** TREE GAUGING FOR EDGE ELEMENTS ***
+
+
+ *** NOTE ***                            CP =       0.500   TIME= 16:27:56
+ ANSYS has created the _TGAUGE component of 1089 nodes with the          
+ edge-flux degrees of freedom AZ constrained to zero by the tree         
+ gauging procedure.                                                      
+ 
+
+ *** TREE GAUGING STATISTICS:
+    number of nodes        :        7344
+    number of elements     :        4159
+    number of edges        :        6133
+    number of D commands   :        1449
+    number of active edges :        4684
+
+ *** NOTE ***                            CP =       0.500   TIME= 16:27:56
+ Tree gauging data is available and gauging has been turned off for      
+ subsequent SOLVE commands.  If you plan to add or remove AZ             
+ constraints (via D or CE commands) please issue GAUGE,ON,0 or GAUGE,    
+ ON,1 command before the next SOLVE command.                             
+
+ *** WARNING ***                         CP =       0.500   TIME= 16:27:56
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** NOTE ***                            CP =       0.531   TIME= 16:27:56
+ The model data was checked and warning messages were found.             
+  Please review output or errors file ( C:\Users\kmlee\Desktop\cae       
+ project\_ProjectScratch\Scr6F5D\file.err ) for these warning messages.  
+
+ *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE Release 18.2     18.2     ***
+ DISTRIBUTED ANSYS Academic Teaching Introductory              
+
+ 01055371  VERSION=WINDOWS x64   16:27:56  JUN 08, 2019 CP=      0.531
+
+ Final Project--Magnetostatic (A5)                                             
+
+
+
+                       S O L U T I O N   O P T I O N S
+
+   PROBLEM DIMENSIONALITY. . . . . . . . . . . . .3-D                  
+   DEGREES OF FREEDOM. . . . . . AZ  
+   ANALYSIS TYPE . . . . . . . . . . . . . . . . .STATIC (STEADY-STATE)
+   OFFSET TEMPERATURE FROM ABSOLUTE ZERO . . . . .  273.15    
+   ELECTRO-MAGNETIC UNITS. . . . . . . . . . . . .MKS          
+      MUZERO . . . . . . . . . . . . . . . . . . . 0.12566E-05
+   NEWTON-RAPHSON OPTION . . . . . . . . . . . . .PROGRAM CHOSEN   
+   GLOBALLY ASSEMBLED MATRIX . . . . . . . . . . .SYMMETRIC  
+
+ *** NOTE ***                            CP =       0.562   TIME= 16:27:56
+ The Solution Control Option is only valid for single field structural,  
+ single field thermal, single field diffusion, coupled                   
+ thermal-diffusion analyses and coupled-field analyses with structural   
+ degrees of freedom.  The SOLCONTROL,ON command (if present) has been    
+ de-activated.                                                           
+
+ *** NOTE ***                            CP =       0.562   TIME= 16:27:56
+ This nonlinear analysis defaults to using the full Newton-Raphson       
+ solution procedure.  This can be modified using the NROPT command.      
+
+ *** NOTE ***                            CP =       0.562   TIME= 16:27:56
+ The conditions for direct assembly have been met.  No .emat or .erot    
+ files will be produced.                                                 
+
+                      L O A D   S T E P   O P T I O N S
+
+   LOAD STEP NUMBER. . . . . . . . . . . . . . . .     1
+   TIME AT END OF THE LOAD STEP. . . . . . . . . .  1.0000    
+   AUTOMATIC TIME STEPPING . . . . . . . . . . . .    ON
+      INITIAL NUMBER OF SUBSTEPS . . . . . . . . .     1
+      MAXIMUM NUMBER OF SUBSTEPS . . . . . . . . .    10
+      MINIMUM NUMBER OF SUBSTEPS . . . . . . . . .     1
+   MAXIMUM NUMBER OF EQUILIBRIUM ITERATIONS. . . .    25
+   STEP CHANGE BOUNDARY CONDITIONS . . . . . . . .    NO
+   TERMINATE ANALYSIS IF NOT CONVERGED . . . . . .YES (EXIT)  
+   CONVERGENCE CONTROLS
+      LABEL   REFERENCE    TOLERANCE  NORM     MINREF
+       CSG     0.000       0.5000E-02   2     0.1000E-05
+   PRINT OUTPUT CONTROLS . . . . . . . . . . . . .NO PRINTOUT
+   DATABASE OUTPUT CONTROLS
+      ITEM     FREQUENCY   COMPONENT
+       ALL       NONE               
+       ALL        ALL               
+
+
+
+ Range of element maximum matrix coefficients in global coordinates
+ Maximum = 7.16826674E+10 at element 4012.                               
+ Minimum = 1061.03295 at element 34.                                     
+
+   *** ELEMENT MATRIX FORMULATION TIMES
+     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+        1         8  SOLID117      0.000   0.000000
+        2         8  SOLID117      0.000   0.000000
+        3        64  SOLID117      0.062   0.000977
+        4       144  SOLID117      0.000   0.000000
+        5        20  SOLID117      0.031   0.001563
+        6        20  SOLID117      0.031   0.001563
+        7        20  SOLID117      0.000   0.000000
+        8        20  SOLID117      0.000   0.000000
+        9      3175  SOLID117      0.438   0.000138
+       10       680  SOLID117      0.000   0.000000
+ Time at end of element matrix formulation CP = 1.25.                    
+
+ ALL CURRENT ANSYS DATA WRITTEN TO FILE NAME= file.rdb
+  FOR POSSIBLE RESUME FROM THIS POINT
+     CUR SEG CONVERGENCE VALUE=   77.10      CRITERION=  0.3855    
+
+ SPARSE MATRIX DIRECT SOLVER.
+  Number of equations =        4684,    Maximum wavefront =     26
+  Memory allocated for solver              =    13.720 MB
+  Memory required for in-core solution     =     5.858 MB
+  Memory required for out-of-core solution =     2.781 MB
+
+ *** NOTE ***                            CP =       1.438   TIME= 16:27:56
+ The Sparse Matrix Solver is currently running in the in-core memory     
+ mode.  This memory mode uses the most amount of memory in order to      
+ avoid using the hard drive as much as possible, which most often        
+ results in the fastest solution time.  This mode is recommended if      
+ enough physical memory is present to accommodate all of the solver      
+ data.                                                                   
+ Sparse solver maximum pivot= 8.26252657E+10 at node 2507 AZ.            
+ Sparse solver minimum pivot= 1007.23773 at node 2269 AZ.                
+ Sparse solver minimum pivot in absolute value= 1007.23773 at node 2269  
+ AZ.                                                                     
+    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.4301E-05
+     CUR SEG CONVERGENCE VALUE=  0.9324      CRITERION=  0.5817    
+    EQUIL ITER   2 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.4735E-07
+     CUR SEG CONVERGENCE VALUE=  0.1527E-04  CRITERION=  0.5805     <<< CONVERGED
+    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   2
+
+   *** ELEMENT RESULT CALCULATION TIMES
+     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+        1         8  SOLID117      0.000   0.000000
+        2         8  SOLID117      0.000   0.000000
+        3        64  SOLID117      0.000   0.000000
+        4       144  SOLID117      0.000   0.000000
+        5        20  SOLID117      0.000   0.000000
+        6        20  SOLID117      0.000   0.000000
+        7        20  SOLID117      0.000   0.000000
+        8        20  SOLID117      0.000   0.000000
+        9      3175  SOLID117      0.125   0.000039
+       10       680  SOLID117      0.062   0.000092
+
+   *** NODAL LOAD CALCULATION TIMES
+     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+        1         8  SOLID117      0.000   0.000000
+        2         8  SOLID117      0.000   0.000000
+        3        64  SOLID117      0.000   0.000000
+        4       144  SOLID117      0.000   0.000000
+        5        20  SOLID117      0.000   0.000000
+        6        20  SOLID117      0.000   0.000000
+        7        20  SOLID117      0.000   0.000000
+        8        20  SOLID117      0.000   0.000000
+        9      3175  SOLID117      0.031   0.000010
+       10       680  SOLID117      0.000   0.000000
+ *** LOAD STEP     1   SUBSTEP     1  COMPLETED.    CUM ITER =      2
+ *** TIME =   1.00000         TIME INC =   1.00000    
+
+
+ *** ANSYS BINARY FILE STATISTICS
+  BUFFER SIZE USED= 16384
+        6.562 MB WRITTEN ON ELEMENT SAVED DATA FILE: file.esav
+        1.250 MB WRITTEN ON ASSEMBLED MATRIX FILE: file.full
+        4.625 MB WRITTEN ON RESULTS FILE: file.rmg
+
+ *** NOTE ***                            CP =       2.266   TIME= 16:27:57
+ 1089 edge-flux degrees of freedom constraints imposed by the tree       
+ gauging procedure have been deleted.                                    
+ *************** Write FE CONNECTORS *********
+
+ WRITE OUT CONSTRAINT EQUATIONS TO FILE= file.ce                                                                                                                                                                                                                                                             
+ ****************************************************
+ *************** FINISHED SOLVE FOR LS 1 *************
+
+ *GET  _WALLASOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  16.4658333    
+
+ FINISH SOLUTION PROCESSING
+
+ *** NOTE ***                            CP =       2.297   TIME= 16:27:57
+ Distributed parallel processing has been reactivated.                   
+
+
+ ***** ROUTINE COMPLETED *****  CP =         2.297
+
+
+
+ *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE Release 18.2     18.2     ***
+ DISTRIBUTED ANSYS Academic Teaching Introductory              
+
+ 01055371  VERSION=WINDOWS x64   16:27:57  JUN 08, 2019 CP=      2.328
+
+ Final Project--Magnetostatic (A5)                                             
+
+
+
+          ***** ANSYS RESULTS INTERPRETATION (POST1) *****
+
+ *** NOTE ***                            CP =       2.328   TIME= 16:27:57
+ Reading results into the database (SET command) will update the current 
+ displacement and force boundary conditions in the database with the     
+ values from the results file for that load set.  Note that any          
+ subsequent solutions will use these values unless action is taken to    
+ either SAVE the current values or not overwrite them (/EXIT,NOSAVE).    
+
+ Set Encoding of XML File to:ISO-8859-1
+
+ Set Output of XML File to:
+     PARM,     ,     ,     ,     ,     ,     ,     ,     ,     ,     ,     ,
+         ,     ,     ,     ,     ,     ,     ,
+
+ DATABASE WRITTEN ON FILE  parm.xml                                                                                                                                                                                                                                                            
+
+ EXIT THE ANSYS POST1 DATABASE PROCESSOR
+
+
+ ***** ROUTINE COMPLETED *****  CP =         2.328
+
+
+
+ PRINTOUT RESUMED BY /GOP
+
+ *GET  _WALLDONE  FROM  ACTI  ITEM=TIME WALL  VALUE=  16.4658333    
+
+ PARAMETER _PREPTIME =     0.000000000    
+
+ PARAMETER _SOLVTIME =     1.000000000    
+
+ PARAMETER _POSTTIME =     0.000000000    
+
+ PARAMETER _TOTALTIM =     1.000000000    
+
+ EXIT ANSYS WITHOUT SAVING DATABASE
+
+
+ NUMBER OF WARNING MESSAGES ENCOUNTERED=          2
+ NUMBER OF ERROR   MESSAGES ENCOUNTERED=          0
+
++--------- D I S T R I B U T E D   A N S Y S   S T A T I S T I C S ------------+
+
+Release: Release 18.2       Build: 18.2       Update: UP20170726   Platform: WINDOWS x64 
+Date Run: 06/08/2019   Time: 16:27     Process ID: 16228
+Operating System: Windows 10  (Build: 17763)
+
+Processor Model: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+
+Compiler: Intel(R) FORTRAN Compiler Version 15.0.7  (Build: 20160518)
+          Intel(R) C/C++ Compiler Version 15.0.7  (Build: 20160518)
+          Intel(R) Math Kernel Library Version 2017.0.2 Product Build 20170126
+
+Number of machines requested            :    1
+Total number of cores available         :    8
+Number of physical cores available      :    4
+Number of processes requested           :    2
+Number of threads per process requested :    1
+Total number of cores requested         :    2 (Distributed Memory Parallel)               
+MPI Type: INTELMPI
+MPI Version: Intel(R) MPI Library 5.1.3 for Windows* OS
+
+
+GPU Acceleration: Not Requested
+
+Job Name: file0
+Input File: dummy.dat
+
+  Core                Machine Name   Working Directory
+ -----------------------------------------------------
+     0             DESKTOP-9BP9UAD   C:\Users\kmlee\Desktop\cae project\_ProjectScratch\Scr6F5D
+     1             DESKTOP-9BP9UAD   C:\Users\kmlee\Desktop\cae project\_ProjectScratch\Scr6F5D
+ 
+Latency time from master to core     1 =    1.413 microseconds
+ 
+Communication speed from master to core     1 =  2846.56 MB/sec
+
+Total CPU time for main thread                    :        1.5 seconds
+Total CPU time summed for all threads             :        2.4 seconds
+
+Elapsed time spent pre-processing model (/PREP7)  :        0.0 seconds
+Elapsed time spent solution - preprocessing       :        0.1 seconds
+Elapsed time spent computing solution             :        0.8 seconds
+Elapsed time spent solution - postprocessing      :        0.0 seconds
+Elapsed time spent post-processing model (/POST1) :        0.0 seconds
+ 
+Equation solver used                              :            Sparse (symmetric)
+
+Maximum total memory used                         :       64.0 MB
+Maximum total memory allocated                    :     3136.0 MB
+Total physical memory available                   :          8 GB
+
++------ E N D   D I S T R I B U T E D   A N S Y S   S T A T I S T I C S -------+
+
+
+ *---------------------------------------------------------------------------*
+ |                                                                           |
+ |                       DISTRIBUTED ANSYS RUN COMPLETED                     |
+ |                                                                           |
+ |---------------------------------------------------------------------------|
+ |                                                                           |
+ | Ansys Release 18.2          Build 18.2         UP20170726     WINDOWS x64 |
+ |                                                                           |
+ |---------------------------------------------------------------------------|
+ |                                                                           |
+ | Database Requested(-db)  1024 MB    Scratch Memory Requested      1024 MB |
+ | Maximum Database Used      11 MB    Maximum Scratch Memory Used     48 MB |
+ |                                                                           |
+ |---------------------------------------------------------------------------|
+ |                                                                           |
+ |        CP Time      (sec) =          2.422       Time  =  16:27:57        |
+ |        Elapsed Time (sec) =          3.000       Date  =  06/08/2019      |
+ |                                                                           |
+ *---------------------------------------------------------------------------*
